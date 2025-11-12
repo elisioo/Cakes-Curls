@@ -184,6 +184,14 @@
     </footer>
 
     <script>
+        // Navbar toggle for mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinksWrapper = document.querySelector('.nav-links-wrapper');
+
+        navToggle.addEventListener('click', () => {
+            navLinksWrapper.classList.toggle('active');
+        });
+
         // Gallery lightbox
         const images = [
             '../../assets/img/cake1.jpg',

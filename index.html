@@ -10,18 +10,28 @@
 </head>
 <body>
     <!-- Navigation -->
+
+      <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="assets/img/logo.png" alt="Cakes & Curls Logo" class="logo-img">
+                <!-- Use the actual logo image -->
+                <img src="../../assets/img/logo.png" alt="Cakes & Curls Logo" class="logo-img">
+                <a href="#home">
                 <span>Cakes & Curls</span>
+                </a>
             </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links-wrapper">
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#about">About</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -100,18 +110,15 @@
                 <div class="about-text">
                     <h3 class="section-title">About Me</h3>
                     <p>
-                        I was born in a small city in the Northern Philippines and moved to New York, USA at a young age. 
-                        As a self-taught baker and artist, my journey started at a young age when I didn't have much 
-                        creativity or money to spend on expensive cakes and treats.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod, nisl vel tincidunt tincidunt,urna justo laoreet sapien, eget facilisis ligula nunc vel risus.
                     </p>
                     <p>
-                        In 2002, I started learning how to work with edible mediums and techniques. I run a successful 
-                        online marketing agency where I learned how to have a profitable business in the US and have 
-                        been in the cake space.
+                       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                     </p>
                     <p>
-                        Every cake tells a story, and I'm here to help you tell yours through delicious, beautiful 
-                        creations that bring joy to every celebration.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                        eos qui ratione voluptatem sequi nesciunt.
                     </p>
                 </div>
             </div>
@@ -208,6 +215,14 @@
     </footer>
 
     <script>
+        // Navbar toggle for mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinksWrapper = document.querySelector('.nav-links-wrapper');
+
+        navToggle.addEventListener('click', () => {
+            navLinksWrapper.classList.toggle('active');
+        });
+
         // Gallery lightbox
         const images = [
             'assets/img/cake1.jpg',
