@@ -21,7 +21,10 @@ It’s designed to highlight both visual creativity and solid front-end fundamen
 - Add navigation to multiple pages (About, Projects, Contact)  
 - Integrate a backend for dynamic content  
 - Improve animations and accessibility  
-- Convert to a React or Blazor version for better scalability  
+- Convert to a React or Blazor version for better scalability
+
+## Visit
+https://elisioo.github.io/Cakes-Curls/
 
 ## 👤 Author
 **Eli C. Sorono**  
