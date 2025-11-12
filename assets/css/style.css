@@ -598,10 +598,11 @@ body {
 
     .hero-image {
         max-width: 450px;
+        order: -1;
     }
 
     .gallery-item {
-        width: 220px;
+        width: 250px;
         height: 220px;
     }
 
@@ -616,6 +617,8 @@ body {
 
     .about-content {
         grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
     }
 
     .achievements-grid {
@@ -625,6 +628,11 @@ body {
     .testimonial-content {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+
+    }
+    .testimonial-avatar {
+        margin-bottom: 1rem;
     }
 }
 
@@ -671,3 +679,4 @@ body {
         font-size: 2rem;
     }
 }
+
