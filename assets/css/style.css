@@ -303,6 +303,97 @@ body {
 .lightbox-next {
     right: 2rem;
 }
+/* YouTube Videos Section */
+.youtube-section {
+    padding: 4rem 1.5rem;
+    background: linear-gradient(135deg, #fdf2f8 0%, #fff0f3 100%);
+}
+
+.youtube-section .section-title {
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+}
+
+.video-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(217, 67, 113, 0.2);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-title {
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    text-align: center;
+}
+
+.youtube-cta {
+    text-align: center;
+}
+
+.btn-youtube {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.btn-youtube:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.4);
+    background: linear-gradient(135deg, #cc0000 0%, #990000 100%);
+}
+
+.btn-youtube i {
+    font-size: 1.5rem;
+}
+
 
 /* About Section */
 .about {
